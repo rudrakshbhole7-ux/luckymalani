@@ -1,119 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Lucky Malani | Profile</title>
+<title>Lucky Malani | Royal Profile</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:'Poppins',sans-serif;
-background:#0a0a0a;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:linear-gradient(135deg,#000,#111,#000);
 color:white;
 }
 
-header{
+/* HERO */
+
+.hero{
 height:100vh;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(135deg,#000,#1a1a1a);
 }
 
-h1{
-font-size:50px;
+.hero h1{
+font-size:60px;
 color:gold;
-letter-spacing:3px;
+letter-spacing:4px;
 }
 
-.tag{
-font-size:20px;
-opacity:0.8;
+.hero p{
+font-size:22px;
+opacity:.8;
+margin-top:10px;
 }
 
-.btn{
-margin-top:20px;
-padding:12px 30px;
-border:none;
-background:gold;
-color:black;
-font-weight:bold;
-border-radius:30px;
-cursor:pointer;
-}
+/* SECTION */
 
 section{
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
-.card{
-background:#111;
-padding:30px;
-border-radius:20px;
-max-width:500px;
-margin:auto;
-box-shadow:0 0 20px rgba(255,215,0,0.3);
+h2{
+color:gold;
+margin-bottom:30px;
+font-size:35px;
 }
+
+/* GLASS CARD */
+
+.card{
+max-width:650px;
+margin:auto;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:35px;
+border-radius:25px;
+box-shadow:0 0 40px rgba(255,215,0,0.3);
+}
+
+/* PHOTO GALLERY */
 
 .gallery{
 display:flex;
-gap:15px;
 flex-wrap:wrap;
+gap:20px;
 justify-content:center;
 }
 
 .gallery img{
-width:250px;
+width:260px;
 border-radius:15px;
+transition:.4s;
 }
 
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 35px;
+background:gold;
+color:black;
+font-weight:bold;
+border-radius:30px;
+text-decoration:none;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px 20px;
+border-radius:40px;
+color:white;
+font-weight:bold;
+text-decoration:none;
+}
+
+/* FOOTER */
+
 footer{
-text-align:center;
 padding:30px;
-background:#000;
+text-align:center;
+background:black;
 color:gray;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
+<div class="hero">
 
-<div>
 <h1>Lucky Malani</h1>
 
-<p class="tag">Luxury Lifestyle | Traveller | Dreamer</p>
-
-<button class="btn">View Profile</button>
+<p>Luxury Lifestyle • Traveller • Entrepreneur</p>
 
 </div>
 
-</header>
-
 <section>
 
-<h2 style="color:gold;">About Me</h2>
+<h2>About Me</h2>
 
 <div class="card">
 
-<p>
-Hello, I am Lucky Malani.  
-I love travelling, exploring new places and living a positive lifestyle.
-</p>
+<p><b>Name:</b> Lucky Malani</p>
 
-<p>
-Community: Malani  
-Religion: Hindu
-</p>
+<p><b>Religion:</b> Sindhi Hindu</p>
+
+<p><b>City:</b> Bhilwara</p>
+
+<p><b>Height:</b> 5'11</p>
+
+<p><b>Profession:</b> Real Estate Agent & Financer</p>
+
+<p><b>Hobby:</b> Travelling</p>
 
 </div>
 
@@ -121,13 +161,13 @@ Religion: Hindu
 
 <section>
 
-<h2 style="color:gold;">Photo Gallery</h2>
+<h2>My Photos</h2>
 
 <div class="gallery">
 
-<img src="https://picsum.photos/300?1">
-<img src="https://picsum.photos/300?2">
-<img src="https://picsum.photos/300?3">
+<img src="lucky1.jpg">
+<img src="lucky2.jpg">
+<img src="lucky3.jpg">
 
 </div>
 
@@ -135,12 +175,12 @@ Religion: Hindu
 
 <section>
 
-<h2 style="color:gold;">Partner Preference</h2>
+<h2>Partner Preference</h2>
 
 <div class="card">
 
 <p>
-Looking for a kind, understanding and family oriented life partner.
+Looking for a simple, kind and family-oriented life partner who believes in love, respect and strong family values.
 </p>
 
 </div>
@@ -152,6 +192,10 @@ Looking for a kind, understanding and family oriented life partner.
 © 2026 Lucky Malani
 
 </footer>
+
+<a class="whatsapp" href="https://wa.me/917014091110">
+Chat on WhatsApp
+</a>
 
 </body>
 </html>
